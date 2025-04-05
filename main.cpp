@@ -78,7 +78,7 @@ public:
         bool step1 = true;
         while (step1) {
             cout << "\nRandom Racing Game\n" << endl;
-            cout << "Enter the amount of players (max 3 for now)" << endl;
+            cout << "Enter the amount of players (max " << this->maxPlayers << ")" << endl;
             cout << "->: ";
             string totalPlayers;
             getline(cin, totalPlayers);
@@ -92,10 +92,10 @@ public:
             }
 
             cm.hideCursor();
-            if (!isDigit || (isDigit && (stoi(totalPlayers) < 2 || stoi(totalPlayers) > 3))) {
+            if (!isDigit || (isDigit && (stoi(totalPlayers) < (this->maxPlayers-1) || stoi(totalPlayers) > this->maxPlayers))) {
                 system("cls");
                 cm.setCursorPosition(0, 6);
-                cout << "\nInvalid input. Must be a number from 2--3.\n\n" << endl;
+                cout << "\nInvalid input. Must be a number from " << (this->maxPlayers-1) << "--" << this->maxPlayers << ".\n\n" << endl;
                 cm.setCursorPosition(0, 0);
             }
             else {
@@ -103,7 +103,7 @@ public:
 
                 system("cls");
                 cout << "\nRandom Racing Game\n" << endl;
-                cout << "Enter the amount of players (max 3 for now)" << endl;
+                cout << "Enter the amount of players (max " << this->maxPlayers << ")" << endl;
                 cout << "->: " << this->totalPlayers << endl;
                 cout << endl;
 
