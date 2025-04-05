@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1737516245 source:e:\ryunosuke2160\coding\ide\codeblocks\newly created projects\racing\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<cctype>
+	<windows.h>
+	<vector>
+	<thread>
+	<chrono>
+
