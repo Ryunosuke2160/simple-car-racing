@@ -1,5 +1,5 @@
-# Simple_Car_Racing
-A simple terminal based racing game.
+# Simple Car Racing
+A simple terminal based RNG racing game.
 > [!NOTE]
 > I found a similar video online and thought it was fun, so I decided to create my own version using C++.
 
